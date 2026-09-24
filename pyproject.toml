@@ -5,12 +5,32 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "minimemory"
 version = "0.8.0"
-description = "Offline-first local memory brain for AI applications, with SQLite, associative recall, semantic search, text refinement, and portable knowledge packs."
+description = "Offline-first local AI memory library for Python. Private SQLite memory for AI assistants, LLM apps, semantic search, associative recall, and portable knowledge packs."
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "minimemory contributors" }]
 license = { text = "Apache-2.0" }
-keywords = ["memory", "ai", "llm", "offline", "sqlite", "semantic-search", "associative-memory", "knowledge-graph", "rag", "knowledge-packs"]
+keywords = [
+    "local ai memory",
+    "offline ai memory",
+    "private ai memory",
+    "python ai memory",
+    "llm memory",
+    "local llm memory",
+    "sqlite ai memory",
+    "semantic search python",
+    "associative memory",
+    "knowledge graph python",
+    "rag python",
+    "retrieval augmented generation",
+    "ai assistant memory",
+    "privacy-first ai",
+    "local chatbot memory",
+    "knowledge base python",
+    "offline ai",
+    "android ai",
+    "termux ai"
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
