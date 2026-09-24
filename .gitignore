@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Python packaging/build artifacts
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/

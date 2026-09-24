@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimemory"
+version = "0.8.0"
+description = "Offline-first local memory brain for AI applications, with SQLite, associative recall, semantic search, text refinement, and portable knowledge packs."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "minimemory contributors" }]
+license = { text = "Apache-2.0" }
+keywords = ["memory", "ai", "llm", "offline", "sqlite", "semantic-search", "associative-memory", "knowledge-graph", "rag", "knowledge-packs"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.optional-dependencies]
+semantic = [
+    "sentence-transformers>=2.2.0",
+    "torch>=2.0.0",
+    "numpy"
+]
+hub = ["huggingface_hub>=0.20"]
+all = [
+    "sentence-transformers>=2.2.0",
+    "torch>=2.0.0",
+    "numpy",
+    "huggingface_hub>=0.20",
+    "ddgs>=9.0.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0"
+]
+research = ["ddgs>=9.0.0", "requests>=2.31.0", "beautifulsoup4>=4.12.0"]
+dev = ["pytest>=7.0", "pytest-cov>=4.0", "build>=1.0", "twine>=4.0"]
+
+[project.scripts]
+minimemory = "minimemory.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["minimemory*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
