@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://inkhan70.github.io/minimemory-electric-brain/sitemap.xml
